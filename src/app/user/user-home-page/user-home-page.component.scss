@@ -1,0 +1,121 @@
+$primary-color: #3D52A0;
+$color-2: #8697c3;
+$color-3: #adbada;
+$color-4: #eee7f6;
+
+.main-wrapper{
+    position: relative;
+   
+}
+
+.section-wrapper{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.table-contents{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #444;
+}
+
+table{
+    border: 1px solid black;
+    
+}
+
+tr td{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+tr td.consumer-number {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    
+}
+
+tr td.consumer-column {
+    border-bottom: none;
+}
+
+td {
+    font-size: 12px;
+    text-align: center;
+}
+
+tr td.colum-heading1{
+    border-right: none;
+    font-weight: 600;
+}
+
+tr td.colum-heading2{
+    border-right: none;
+    font-weight: 600;
+}
+
+.consumer-number{
+    display: none;
+}
+
+.current{
+    margin-bottom: 16px;
+}
+
+.footer-wrapper{
+    background-color: $primary-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    h6{
+        font-size: small;
+        text-align: center;
+        color: white;
+        font-weight: 300;
+        
+    }    
+}
+
+@media screen and (min-width:559px) {
+    table{
+        margin: 10px;
+    }
+
+    .consumer-number{
+        display: block;
+    }
+
+    h6{
+        font-size: 20px;
+    }
+
+    td{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+}
+
+@media screen and (min-width:990px) {
+    h6{
+        font-size: 22px;
+    }
+
+    td{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+}

@@ -1,0 +1,51 @@
+$primary-color: #3D52A0;
+
+.section-wrapper{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.card{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #444;
+}
+
+.footer-wrapper{
+    background-color: $primary-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    h6{
+        font-size: small;
+        text-align: center;
+        color: white;
+        font-weight: 300;
+        
+    }    
+}
+
+@media screen and (min-width:559px) {
+    .section-wrapper{
+        padding-top: 70px;
+    }
+
+    .card{
+        margin: auto;
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width:990px) {
+
+    .section-wrapper{
+        padding-top: 90px;
+    }
+
+    .card{
+        margin: auto;
+        max-width: 550px;
+    }
+}

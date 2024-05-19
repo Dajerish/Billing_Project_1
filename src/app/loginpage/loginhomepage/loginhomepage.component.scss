@@ -19,6 +19,7 @@ $color-4: #eee7f6;
 	height: 360px;
 	background: #eee;
     border-radius: 20px;
+	border: 1px solid black;
     box-shadow: 10px 7px 0 0 $color-3;
 }
 
@@ -63,4 +64,50 @@ button:hover{
 .login label{
 	color: #573b8a;
 	transform: scale(.6);
+}
+
+h5{
+	text-align: center;
+}
+
+.footer-wrapper{
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	height: 20px;
+	width: 100%;
+	background-color: $primary-color;
+}
+
+@media screen and (min-width:559px) {
+       
+	.header-wrapper{
+		height:80px;
+	}
+
+	.login {
+		margin-top: 90px;
+		width: 400px;
+		height: 400px;
+	}
+
+	input{
+		width: 60%;
+		height: 30px;
+	}
+}
+
+@media screen and (min-width:990px) {
+	.header-wrapper{
+		height:90px;
+	}
+
+	.login {
+		margin-top: 100px;
+	}
+
+	input{
+		width: 60%;
+		height: 30px;
+	}
 }
